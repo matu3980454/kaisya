@@ -49,9 +49,9 @@ with col2:
 with col3:
     st.text_area("ハイレベルコンセプト", value=" ", key="lean8") 
 with col4:
-    st.text_area("ソリューション", value=" ", key="lean9") 
+    st.text_area("チャネル", value=" ", key="lean9") 
 with col5:
-    st.text_area("独自の価値提案", value=" ", key="lean10") 
+    st.text_area("アーリーアダプター", value=" ", key="lean10") 
 ###
 col1, col2 = st.columns([1, 1], gap="small")
 with col1:
