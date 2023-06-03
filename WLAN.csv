@@ -1,0 +1,10 @@
+無線LANの伝送規格,IEEE802.11b,IEEE802.11a,IEEE802.11g,IEEE802.11n
+周波数帯域,2.4GHz帯,5GHz帯,2.4GHz帯,2.4 / 5 GHz帯
+最大伝送速度,11Mbps,54Mbps,54Mbps,600Mbps
+伝送速度※1,1Mbps ～ 11Mbps,6Mbps ～ 54Mbps,6Mbps ～ 54Mbps,4ストリーム時）
+利用可能チャネル数,14,19,13,13 / 19
+チャネル幅,22 MHz,20 MHz,20 MHz,20MHz or 40MHz
+データの電波への変換方法,DSSS,OFDM,DSSS / OFDM,OFDM
+屋外での利用,○,×,○,△
+IEEE802.11bとの互換性,-,×,○,○
+策定時期,1999年,1999年,2003年,2009年
