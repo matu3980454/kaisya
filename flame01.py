@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 import numpy as np
 
-#st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 ####
 st.header('データ活用支援　フレームワーク')
 st.checkbox(label='Check')
@@ -13,6 +13,7 @@ st.selectbox(label='フレームワークを選択してください', options=[
 image_1 = Image.open("PEST.jpg")
 st.image(image_1, caption='PEST分析の解説', use_column_width=True) #width=700
 ####　PEST
+st.write("【PEST分析】")
 col1, col2= st.columns([1, 1], gap="small")
 with col1:
     st.text_area("P（Politics：政治的要因）", value=" ", key="text_input1") 
@@ -24,6 +25,42 @@ with col1:
     st.text_area("S（Society：社会的要因）", value=" ", key="text_input3") 
 with col2:
     st.text_area("T（Technology：技術的要因）", value=" ", key="text_input4") 
+
+
+####　リーンキャンバス
+st.write("【リーンキャンバス】")
+col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1], gap="small")
+with col1:
+    st.text_area("課題", value=" ", key="lean1") 
+with col2:
+    st.text_area("ソリューション", value=" ", key="lean2") 
+with col3:
+    st.text_area("独自の価値提案", value=" ", key="lean3") 
+with col4:
+    st.text_area("ソリューション", value=" ", key="lean4") 
+with col5:
+    st.text_area("独自の価値提案", value=" ", key="lean5") 
+###
+col1, col2, col3 , col4, col5 = st.columns([1, 1, 1, 1, 1], gap="small")
+with col1:
+    st.text_area("既存の代替品", value=" ", key="lean6") 
+with col2:
+    st.text_area("主要指標", value=" ", key="lean7") 
+with col3:
+    st.text_area("ハイレベルコンセプト", value=" ", key="lean8") 
+with col4:
+    st.text_area("ソリューション", value=" ", key="lean9") 
+with col5:
+    st.text_area("独自の価値提案", value=" ", key="lean10") 
+###
+col1, col2 = st.columns([1, 1], gap="small")
+with col1:
+    st.text_area("コスト構造", value=" ", key="lean11") 
+with col2:
+    st.text_area("収益の流れ", value=" ", key="lean12") 
+
+
+
 
 ### 表（CSV）
 dfg = pd.read_csv("WLAN.csv", encoding="shift-jis")
