@@ -11,7 +11,7 @@ st.slider(label='Slider')
 st.selectbox(label='フレームワークを選択してください', options=['PEST', 'SWOT', 'クロスSWOT'])
 ####
 image_1 = Image.open("PEST.jpg")
-st.image(image_1, caption='PEST分析の解説', width=700)
+st.image(image_1, caption='PEST分析の解説', use_column_width=True) #width=700
 ####　PEST
 col1, col2= st.columns([1, 1], gap="small")
 with col1:
